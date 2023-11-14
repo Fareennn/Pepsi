@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="javascript" src="script.js"></script> -->
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li ><a href="#">Home</a></li>
+                <li ><a href="#">Products</a></li>
+                <li ><a href="#">What's New</a></li>
+                <li ><a href="#">Newsletter</a></li>
+                <li ><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <br> <span>I like</span></h2>
+                    <p>Discover the classic refreshment of Pepsi. For generations, it's been the go-to choice for a bold, satisfying taste. Whether it's a hot day or mealtime, Pepsi's iconic flavor never disappoints. Join us in savoring the tradition, innovation, and pure enjoyment that is Pepsi.
+                    </p>
+                    <a href="#"> View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="pepsi001.png" class="Pepsi">
+            </div>
+        </div>
+        <ul id="thumb">
+            <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png')"
+                ></li>
+            <li ><img src="pepsi002.png" onclick="imgSlider('pepsi002.png')"
+                ></li>
+            <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png')"
+                ></li>
+</ul>
+<ul class="sci">
+    <li><a href="#"><img src="facebook.png"></a></li>
+    <li><a href="#"><img src="instagram.png"></a></li>
+    <li><a href="#"><img src="twitter.png"></a></li>
+</ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(newImageSrc) {
+            let imageContainer = document.getElementById("thumb");
+            let images = imageContainer.getElementsByTagName("img");
+             images[0].src = newImageSrc;}
+            
+    </script>
+</body>
+
+</html>
